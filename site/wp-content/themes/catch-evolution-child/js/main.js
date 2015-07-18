@@ -13,8 +13,9 @@
 jQuery(document).ready(function() {
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
       CleGardens.map = MYMAP[1].map;
-	    CleGardens.geoMarker = new GeolocationMarker();
+	  CleGardens.geoMarker = new GeolocationMarker();
       CleGardens.geoMarker.setMap(CleGardens.map);
+      CleGardens.centerOnCurrentLocation();
 	});
 });
 
@@ -32,10 +33,24 @@ function loadJS(src,callback) {
    document.getElementsByTagName('head')[0].appendChild(s);
 }
 
-var CleGardens = function() {
+var CleGardens = (function() {
 	var map = null;
 	var currentPosition = null;
 	var geoMarker = null;
 
-	return {map: map, position: currentPosition, geoMarker: geoMarker};
-};
+	// todo: not complete, seems to be offset from center. Cards adjustment?
+	var centerView = function() {
+		if (navigator.geolocation) {
+     		navigator.geolocation.getCurrentPosition(function (position) {
+        		initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+         		if (CleGardens.map && CleGardens.geoMarker) {
+         			CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
+         		}
+     		});
+ 		}
+	}
+
+	return {
+			map: map, position: currentPosition, geoMarker: geoMarker,
+			centerOnCurrentLocation: centerView};
+}());
