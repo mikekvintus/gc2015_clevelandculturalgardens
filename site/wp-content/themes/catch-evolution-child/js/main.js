@@ -44,13 +44,24 @@ function loadJS(src,callback) {
 
 var CleGardens = (function() {
 	var map = null;
-	var currentPosition = null;
 	var geoMarker = null;
+
+	var currentPosition = function () {
+    if (CleGardens.geoMarker) {
+      return CleGardens.geoMarker.getPosition();
+    }
+
+    if (map) {
+      return map.getCurrentPosition();
+    }
+
+	  return null;
+	};
 
 	var centerView = function() {
 	  if (CleGardens.map && CleGardens.geoMarker) {
 	    CleGardens.map.setZoom(17);
-         	CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
+         	CleGardens.map.setCenter(CleGardens.position());
       }
 	}
 
