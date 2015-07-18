@@ -11,8 +11,14 @@
 // todo: feature switch on geolocation. (browser check)
 // todo: handlers for watchPosition success/fail
 jQuery(document).ready(function() {
-  loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
-      CleGardens.map = MYMAP[1].map;
+  loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function () {
+      for (var i = 0; i < MYMAP.length; i++) {
+          if (MYMAP[i]) {
+              CleGardens.map = MYMAP[i].map;
+              break;
+          }
+      }
+
 	    CleGardens.geoMarker = new GeolocationMarker();
       CleGardens.geoMarker.setMap(CleGardens.map);
 
@@ -41,9 +47,9 @@ var CleGardens = (function() {
 	var currentPosition = null;
 	var geoMarker = null;
 
-	// todo: not complete, seems to be offset from center. Cards adjustment?
 	var centerView = function() {
-      if (CleGardens.map && CleGardens.geoMarker) {
+	  if (CleGardens.map && CleGardens.geoMarker) {
+	    CleGardens.map.setZoom(17);
          	CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
       }
 	}
