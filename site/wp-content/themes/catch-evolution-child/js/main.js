@@ -11,12 +11,17 @@
 // todo: feature switch on geolocation. (browser check)
 // todo: handlers for watchPosition success/fail
 jQuery(document).ready(function() {
-    CleGardens.map = MYMAP[1].map;
+	var mapOptions = { 
+						enableHighAccuracy: true,
+					   	timeout: Infinity,
+					   	maximumAge: 0
+					 };
+	CleGardens.map = new google.maps.Map(document.getElementById("wpgmza_map_1"), mapOptions);
     
-	  loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
-		CleGardens.map.mapUrl= "http://maps.google.com/maps?ll=41.510676,-81.692127&z=17&t=m&hl=en-US&gl=US&mapclient=apiv3";
+	loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
+		MYMAP[1].map.mapUrl= "http://maps.google.com/maps?ll=41.510676,-81.692127&z=17&t=m&hl=en-US&gl=US&mapclient=apiv3";
 		CleGardens.geoMarker = new GeolocationMarker();
-		CleGardens.geoMarker.setMap(CleGardens.map);
+		CleGardens.geoMarker.setMap(MYMAP[1].map);
 	});
 });
 
