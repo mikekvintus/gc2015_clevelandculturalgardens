@@ -75,8 +75,8 @@ function CenterControl(controlDiv) {
     controlText.innerHTML = 'Center Map';
     controlUI.appendChild(controlText);
 
-//      google.maps.event.addDomListener(controlUI, 'click', function() {
-//      CleGardens.centerOnCurrentLocation();
-//      });      
-  }
+    google.maps.event.addDomListener(controlUI, 'click', function() {
+        CleGardens.centerOnCurrentLocation();
+    });      
+}
 
