@@ -1,0 +1,12 @@
+[23-Jun-2015 02:33:27 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio.ac3.php on line 19
+[23-Jun-2015 10:50:26 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.tag.lyrics3.php on line 19
+[23-Jun-2015 15:01:14 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.tag.apetag.php on line 18
+[23-Jun-2015 22:18:32 America/Chicago] PHP Fatal error:  Class 'getid3_lib' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio-video.quicktime.php on line 18
+[24-Jun-2015 08:45:59 America/Chicago] PHP Fatal error:  Class 'getid3_lib' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio-video.riff.php on line 26
+[27-Jun-2015 12:43:46 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio-video.flv.php on line 76
+[30-Jun-2015 13:10:32 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.tag.id3v1.php on line 19
+[01-Jul-2015 18:19:39 America/Chicago] PHP Fatal error:  Class 'getid3_lib' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.tag.id3v2.php on line 17
+[02-Jul-2015 06:22:52 America/Chicago] PHP Fatal error:  Class 'getid3_lib' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio-video.asf.php on line 17
+[03-Jul-2015 01:51:06 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio-video.matroska.php on line 217
+[12-Jul-2015 19:46:57 America/Chicago] PHP Fatal error:  Class 'getid3_handler' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio.dts.php on line 22
+[14-Jul-2015 12:48:30 America/Chicago] PHP Fatal error:  Class 'getid3_lib' not found in /home4/mdifilm/public_html/gardens/wp-includes/ID3/module.audio.flac.php on line 18

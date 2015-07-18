@@ -1,0 +1,4 @@
+[26-Apr-2015 11:27:22 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-content/plugins/hello.php on line 60
+[08-May-2015 10:49:45 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-content/plugins/hello.php on line 60
+[28-May-2015 04:00:41 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-content/plugins/hello.php on line 60
+[22-Jun-2015 17:06:44 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-content/plugins/hello.php on line 60

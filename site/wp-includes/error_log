@@ -1,0 +1,54 @@
+[25-Apr-2015 13:07:15 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[25-Apr-2015 13:07:15 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[25-Apr-2015 13:07:15 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[26-Apr-2015 03:47:06 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home4/mdifilm/public_html/gardens/wp-includes/post-template.php on line 1292
+[20-May-2015 07:32:42 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/registration.php on line 7
+[21-May-2015 23:44:53 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/class-simplepie.php on line 5
+[21-May-2015 23:44:53 America/Chicago] PHP Warning:  require(ABSPATHWPINC/SimplePie/Misc.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/class-simplepie.php on line 5
+[21-May-2015 23:44:53 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/SimplePie/Misc.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/class-simplepie.php on line 5
+[23-May-2015 08:36:47 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-image-editor-gd.php on line 17
+[26-May-2015 07:46:11 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-embed.php on line 26
+[29-May-2015 16:46:55 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-xmlrpc-server.php on line 23
+[29-May-2015 19:18:02 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home4/mdifilm/public_html/gardens/wp-includes/category-template.php on line 912
+[30-May-2015 06:08:11 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-embed.php on line 26
+[30-May-2015 17:23:28 America/Chicago] PHP Fatal error:  Class 'IXR_Client' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-http-ixr-client.php on line 9
+[03-Jun-2015 09:47:29 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/rss-functions.php on line 8
+[11-Jun-2015 10:48:15 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home4/mdifilm/public_html/gardens/wp-includes/nav-menu-template.php on line 16
+[11-Jun-2015 10:48:32 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home4/mdifilm/public_html/gardens/wp-includes/default-filters.php on line 17
+[11-Jun-2015 10:48:36 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home4/mdifilm/public_html/gardens/wp-includes/default-widgets.php on line 14
+[11-Jun-2015 10:48:38 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/class-snoopy.php on line 6
+[11-Jun-2015 10:49:16 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/registration.php on line 7
+[11-Jun-2015 10:49:54 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[11-Jun-2015 10:49:54 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[11-Jun-2015 10:49:54 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[11-Jun-2015 10:49:58 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home4/mdifilm/public_html/gardens/wp-includes/vars.php on line 23
+[11-Jun-2015 10:51:43 America/Chicago] PHP Fatal error:  Call to undefined function is_robots() in /home4/mdifilm/public_html/gardens/wp-includes/template-loader.php on line 28
+[11-Jun-2015 10:51:51 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[11-Jun-2015 10:51:51 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[11-Jun-2015 10:51:51 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[11-Jun-2015 10:51:57 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/rss.php on line 19
+[11-Jun-2015 10:52:15 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home4/mdifilm/public_html/gardens/wp-includes/feed-rss2.php on line 8
+[11-Jun-2015 10:52:21 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home4/mdifilm/public_html/gardens/wp-includes/feed-atom.php on line 8
+[11-Jun-2015 10:52:23 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home4/mdifilm/public_html/gardens/wp-includes/feed-rdf.php on line 8
+[11-Jun-2015 10:52:36 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/rss-functions.php on line 8
+[11-Jun-2015 10:52:38 America/Chicago] PHP Fatal error:  Call to undefined function feed_content_type() in /home4/mdifilm/public_html/gardens/wp-includes/feed-rss.php on line 8
+[11-Jun-2015 10:52:50 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home4/mdifilm/public_html/gardens/wp-includes/category-template.php on line 912
+[11-Jun-2015 10:52:54 America/Chicago] PHP Fatal error:  Class 'IXR_Server' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-xmlrpc-server.php on line 23
+[11-Jun-2015 10:52:55 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-includes/ms-default-filters.php on line 17
+[11-Jun-2015 10:52:56 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home4/mdifilm/public_html/gardens/wp-includes/ms-default-constants.php on line 153
+[11-Jun-2015 10:53:00 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-embed.php on line 26
+[11-Jun-2015 10:53:20 America/Chicago] PHP Fatal error:  Class 'WP_Dependencies' not found in /home4/mdifilm/public_html/gardens/wp-includes/class.wp-styles.php on line 19
+[17-Jun-2015 15:47:13 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-image-editor-gd.php on line 17
+[18-Jun-2015 18:47:49 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/registration.php on line 7
+[21-Jun-2015 08:33:36 America/Chicago] PHP Fatal error:  Class 'WP_Image_Editor' not found in /home4/mdifilm/public_html/gardens/wp-includes/class-wp-image-editor-imagick.php on line 17
+[25-Jun-2015 16:26:39 America/Chicago] PHP Fatal error:  Class 'Walker' not found in /home4/mdifilm/public_html/gardens/wp-includes/nav-menu-template.php on line 16
+[25-Jun-2015 16:36:38 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[25-Jun-2015 16:36:38 America/Chicago] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[25-Jun-2015 16:36:38 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/script-loader.php on line 25
+[25-Jun-2015 16:37:19 America/Chicago] PHP Fatal error:  Call to undefined function add_filter() in /home4/mdifilm/public_html/gardens/wp-includes/default-filters.php on line 17
+[25-Jun-2015 16:37:21 America/Chicago] PHP Fatal error:  Class 'WP_Widget' not found in /home4/mdifilm/public_html/gardens/wp-includes/default-widgets.php on line 14
+[25-Jun-2015 16:42:25 America/Chicago] PHP Fatal error:  Call to undefined function _deprecated_file() in /home4/mdifilm/public_html/gardens/wp-includes/rss.php on line 19
+[25-Jun-2015 16:43:39 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[25-Jun-2015 16:43:39 America/Chicago] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[25-Jun-2015 16:43:39 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/opt/php54/lib/php') in /home4/mdifilm/public_html/gardens/wp-includes/functions.php on line 8
+[25-Jun-2015 16:43:44 America/Chicago] PHP Fatal error:  Call to undefined function is_admin() in /home4/mdifilm/public_html/gardens/wp-includes/vars.php on line 23
