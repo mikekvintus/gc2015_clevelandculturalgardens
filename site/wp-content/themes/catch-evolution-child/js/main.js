@@ -15,7 +15,9 @@ jQuery(document).ready(function() {
       CleGardens.map = MYMAP[1].map;
 	  CleGardens.geoMarker = new GeolocationMarker();
       CleGardens.geoMarker.setMap(CleGardens.map);
-      CleGardens.centerOnCurrentLocation();
+	  
+	  var mapDiv = document.getElementsByClassName("wpgmza_map")[0];
+	  jQuery(mapDiv).append('<button type="button" style="z-index: 9000; position: absolute; display: inline-block; bottom: 14px; right: 14px;" onclick="CleGardens.centerOnCurrentLocation()">Loc</button>');
 	});
 });
 
@@ -40,14 +42,9 @@ var CleGardens = (function() {
 
 	// todo: not complete, seems to be offset from center. Cards adjustment?
 	var centerView = function() {
-		if (navigator.geolocation) {
-     		navigator.geolocation.getCurrentPosition(function (position) {
-        		initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-         		if (CleGardens.map && CleGardens.geoMarker) {
-         			CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
-         		}
-     		});
- 		}
+         if (CleGardens.map && CleGardens.geoMarker) {
+         	CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
+         }
 	}
 
 	return {
