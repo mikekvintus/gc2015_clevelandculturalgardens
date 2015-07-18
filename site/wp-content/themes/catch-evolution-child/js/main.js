@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 
       var centerControlDiv = document.createElement('div');
       var centerControl = CenterControl(centerControlDiv);
-      CleGardens.map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(centerControlDiv);
+      CleGardens.map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
 	});
 });
 
