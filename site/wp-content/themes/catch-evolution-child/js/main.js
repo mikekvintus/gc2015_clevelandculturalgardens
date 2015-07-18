@@ -12,8 +12,9 @@
 // todo: handlers for watchPosition success/fail
 jQuery(document).ready(function() {
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
-	    CleGardens.geoMarker = new GeolocationMarker();
-      CleGardens.geoMarker.setMap(MYMAP[1].map);
+      CleGardens.map = MYMAP[1].map;
+	  CleGardens.geoMarker = new GeolocationMarker();
+      CleGardens.geoMarker.setMap(CleGardens.map);
 	});
 });
 
