@@ -13,11 +13,12 @@
 jQuery(document).ready(function() {
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function() { 
       CleGardens.map = MYMAP[1].map;
-	  CleGardens.geoMarker = new GeolocationMarker();
+	    CleGardens.geoMarker = new GeolocationMarker();
       CleGardens.geoMarker.setMap(CleGardens.map);
-	  
-	  var mapDiv = document.getElementsByClassName("wpgmza_map")[0];
-	  jQuery(mapDiv).append('<button type="button" style="z-index: 9000; position: absolute; display: inline-block; bottom: 14px; right: 14px;" onclick="CleGardens.centerOnCurrentLocation()">Loc</button>');
+
+      var centerControlDiv = document.createElement('div');
+      var centerControl = CenterControl(centerControlDiv);
+      CleGardens.map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(centerControlDiv);
 	});
 });
 
@@ -42,12 +43,40 @@ var CleGardens = (function() {
 
 	// todo: not complete, seems to be offset from center. Cards adjustment?
 	var centerView = function() {
-         if (CleGardens.map && CleGardens.geoMarker) {
+      if (CleGardens.map && CleGardens.geoMarker) {
          	CleGardens.map.setCenter(CleGardens.geoMarker.getPosition());
-         }
+      }
 	}
 
 	return {
 			map: map, position: currentPosition, geoMarker: geoMarker,
 			centerOnCurrentLocation: centerView};
 }());
+
+function CenterControl(controlDiv) {
+    var controlUI = document.createElement('div');
+    controlUI.style.backgroundColor = '#fff';
+    controlUI.style.border = '2px solid #fff';
+    controlUI.style.borderRadius = '3px';
+    controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+    controlUI.style.cursor = 'pointer';
+    controlUI.style.marginBottom = '22px';
+    controlUI.style.textAlign = 'center';
+    controlUI.title = 'Click to recenter the map';
+    controlDiv.appendChild(controlUI);
+
+    var controlText = document.createElement('div');
+    controlText.style.color = 'rgb(25,25,25)';
+    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+    controlText.style.fontSize = '16px';
+    controlText.style.lineHeight = '38px';
+    controlText.style.paddingLeft = '5px';
+    controlText.style.paddingRight = '5px';
+    controlText.innerHTML = 'Center Map';
+    controlUI.appendChild(controlText);
+
+//      google.maps.event.addDomListener(controlUI, 'click', function() {
+//      CleGardens.centerOnCurrentLocation();
+//      });      
+  }
+
