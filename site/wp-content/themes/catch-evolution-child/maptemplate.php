@@ -41,6 +41,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<STYLE type="text/css">
+   .entry-header {display: none}
+   h2 {display: none}
+ </STYLE>
 <?php
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
@@ -65,7 +69,7 @@ do_action( 'catchevolution_before' ); ?>
     /** 
      * catchevolution_before_header hook
      */
-//    do_action( 'catchevolution_before_header' ); ?>
+    do_action( 'catchevolution_before_header' ); ?>
         
 	<!--<header id="branding" role="banner">-->
     	<?php 
@@ -74,7 +78,7 @@ do_action( 'catchevolution_before' ); ?>
 		 *
 		 * @hooked catchevolution_header_topsidebar - 10
 		 */
-//		do_action( 'catchevolution_before_headercontent' ); ?>
+		do_action( 'catchevolution_before_headercontent' ); ?>
         
     	<!--<div id="header-content" class="clearfix">-->
         
@@ -86,7 +90,7 @@ do_action( 'catchevolution_before' ); ?>
                  * @hooked catchevolution_headerdetails - 10
                  * @hooked catchevolution_header_rightpsidebar - 15
                  */
-//                do_action( 'catchevolution_headercontent' ); ?>
+                do_action( 'catchevolution_headercontent' ); ?>
             <!--</div> .wrapper -->
             
       	<!--</div> #header-content -->
@@ -108,7 +112,7 @@ do_action( 'catchevolution_before' ); ?>
 		 * @hooked catchevolution_featured_header - 10
          * @hooked catchevolution_header_menu - 15
 		 */
-//		 do_action( 'catchevolution_after_header' ); ?>
+		 do_action( 'catchevolution_after_header' ); ?>
     
 	<?php 
     /** 
@@ -168,12 +172,3 @@ do_action( 'catchevolution_before' ); ?>
 		<!--</div> #primary -->
 
 <?php get_footer(); ?>
-
-    <script type="text/javascript">
-//      jQuery( document ).ready(function() {
-//   document.write(unescape("%3Cscript src='https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js' type='text/javascript'%3E%3C/script%3E"));
-   
-// });
-    </script>
-
-
