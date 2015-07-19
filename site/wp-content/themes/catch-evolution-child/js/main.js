@@ -8,8 +8,6 @@
  Version:        1.0.0
 */
 
-// todo: feature switch on geolocation. (browser check)
-// todo: handlers for watchPosition success/fail
 jQuery(document).ready(function() {
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function () {
       for (var i = 0; i < MYMAP.length; i++) {
@@ -60,8 +58,13 @@ var CleGardens = (function() {
 
 	var centerView = function() {
 	  if (CleGardens.map && CleGardens.geoMarker) {
-	    CleGardens.map.setZoom(17);
-         	CleGardens.map.setCenter(CleGardens.position());
+	    var firstMap = document.getElementsByClassName('wpgmza_map')[0];
+	    if (firstMap.offsetWidth > 1024) {
+	      CleGardens.map.setZoom(15); // Desktop
+	    } else {
+	      CleGardens.map.setZoom(17); // Mobile (roughly)
+	    }
+	    CleGardens.map.setCenter(CleGardens.position());
       }
 	}
 
@@ -71,26 +74,10 @@ var CleGardens = (function() {
 }());
 
 function CenterControl(controlDiv) {
-    var controlUI = document.createElement('div');
-    controlUI.style.backgroundColor = '#fff';
-    controlUI.style.border = '2px solid #fff';
-    controlUI.style.borderRadius = '3px';
-    controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.marginBottom = '22px';
-    controlUI.style.textAlign = 'center';
+  var controlUI = document.createElement('div');
+    controlUI.setAttribute('class','CenterViewControlUI');
     controlUI.title = 'Click to recenter the map';
     controlDiv.appendChild(controlUI);
-
-    var controlText = document.createElement('div');
-    controlText.style.color = 'rgb(25,25,25)';
-    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-    controlText.style.fontSize = '16px';
-    controlText.style.lineHeight = '38px';
-    controlText.style.paddingLeft = '5px';
-    controlText.style.paddingRight = '5px';
-    controlText.innerHTML = 'Center Map';
-    controlUI.appendChild(controlText);
 
     google.maps.event.addDomListener(controlUI, 'click', function() {
         CleGardens.centerOnCurrentLocation();
