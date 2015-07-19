@@ -8,23 +8,24 @@
  Version:        1.0.0
 */
 
-jQuery(document).ready(function() {
+function customizeCleGardensMap() {
+  initializeMyMap();
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function () {
-      for (var i = 0; i < MYMAP.length; i++) {
-          if (MYMAP[i]) {
-              CleGardens.map = MYMAP[i].map;
-              break;
-          }
+  for (var i = 0; i < MYMAP.length; i++) {
+      if (MYMAP[i]) {
+        CleGardens.map = MYMAP[i].map;
+        break;
       }
+    }
 
-	    CleGardens.geoMarker = new GeolocationMarker();
-      CleGardens.geoMarker.setMap(CleGardens.map);
+    CleGardens.geoMarker = new GeolocationMarker();
+    CleGardens.geoMarker.setMap(CleGardens.map);
 
-      var centerControlDiv = document.createElement('div');
-      var centerControl = CenterControl(centerControlDiv);
-      CleGardens.map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
-	});
-});
+    var centerControlDiv = document.createElement('div');
+    var centerControl = CenterControl(centerControlDiv);
+    CleGardens.map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
+  });
+}
 
 function loadJS(src,callback) {
    var s = document.createElement('script');
@@ -59,7 +60,7 @@ var CleGardens = (function() {
 	var centerView = function() {
 	  if (CleGardens.map && CleGardens.geoMarker) {
 	    var firstMap = document.getElementsByClassName('wpgmza_map')[0];
-	    if (firstMap.offsetWidth > 1024) {
+	    if (firstMap && firstMap.offsetWidth > 1024) {
 	      CleGardens.map.setZoom(15); // Desktop
 	    } else {
 	      CleGardens.map.setZoom(17); // Mobile (roughly)
