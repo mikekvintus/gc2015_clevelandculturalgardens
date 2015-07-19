@@ -11,12 +11,7 @@
 function customizeCleGardensMap() {
   initializeMyMap();
   loadJS('https://google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js', function () {
-  for (var i = 0; i < MYMAP.length; i++) {
-      if (MYMAP[i]) {
-        CleGardens.map = MYMAP[i].map;
-        break;
-      }
-    }
+    CleGardens.map = MYMAP[GetFirstMapIndex(MYMAP)].map;
 
     CleGardens.geoMarker = new GeolocationMarker();
     CleGardens.geoMarker.setMap(CleGardens.map);
@@ -25,6 +20,23 @@ function customizeCleGardensMap() {
     var centerControl = CenterControl(centerControlDiv);
     CleGardens.map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
   });
+}
+
+// Post Override, MYMAP array has no length property. This is to get it.
+function GetFirstMapIndex(array) {
+  var i = 0;
+  try {
+    while (true) {
+      if (array[i]) {
+        return i;
+      }
+      i++;
+    }
+  } catch (err) {
+    // This is the end condition.
+  }
+
+  return i;
 }
 
 function loadJS(src,callback) {
